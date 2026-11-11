@@ -1,0 +1,49 @@
+{
+  "asOf": "2026-10-24",
+  "providers": [
+    {
+      "provider": "icloud-drive",
+      "versioning": "noHistory",
+      "retention": "Only files deleted in the last 30 days can be recovered, through Recently Deleted and Data Recovery on iCloud.com. That is a recovery window for deleted files, not a history of earlier versions of a file. Document versions some Mac apps keep are stored on the Mac, not by iCloud Drive.",
+      "sources": [
+        "https://support.apple.com/guide/icloud/recover-deleted-files-mmae56ea1ca5/icloud",
+        "https://support.apple.com/en-us/111763"
+      ],
+      "notes": "Apple's pages describe recovering deleted files within 30 days and say nothing about earlier versions of a file that still exists. A recovery window for deleted files is not version history."
+    },
+    {
+      "provider": "dropbox",
+      "versioning": "keepsHistory",
+      "retention": "Old versions are kept for 30 days on Basic, Plus and Family plans, and 180 days on Professional and Essentials.",
+      "sources": [
+        "https://help.dropbox.com/en-us/delete-restore/version-history-overview"
+      ]
+    },
+    {
+      "provider": "google-drive",
+      "versioning": "keepsHistory",
+      "retention": "Old versions of uploaded files are kept for 30 days or until 100 newer versions exist, unless a version is marked to keep forever.",
+      "sources": [
+        "https://support.google.com/drive/answer/2409045"
+      ]
+    },
+    {
+      "provider": "onedrive",
+      "versioning": "keepsHistory",
+      "retention": "Personal accounts keep the last 25 versions. Work and school accounts follow the organization's settings.",
+      "sources": [
+        "https://support.microsoft.com/office/159cad6d-d76e-4981-88ef-de6e96c93893"
+      ],
+      "notes": "Work or school accounts depend on admin settings; treated as versioned."
+    },
+    {
+      "provider": "box",
+      "versioning": "keepsHistory",
+      "requiresPaidPlan": true,
+      "retention": "Personal Pro keeps 10 versions; the free plan keeps only 1, which is no history.",
+      "sources": [
+        "https://support.box.com/hc/en-us/articles/360043697054"
+      ]
+    }
+  ]
+}

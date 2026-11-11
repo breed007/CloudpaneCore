@@ -1,0 +1,16 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+DerivedData/
+xcuserdata/
+
+# macOS
+.DS_Store
+
+# Secrets and signing (none expected here)
+*.p8
+*.p12
+*.mobileprovision
+*.pem
+.env
